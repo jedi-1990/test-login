@@ -1,0 +1,48 @@
+@mixin transition($number...) {
+	-webkit-transition: all $number ease-in-out;
+	-moz-transition: all $number ease-in-out;
+	-o-transition: all $number ease-in-out;
+	-ms-transition: all $number ease-in-out;
+	transition: all $number ease-in-out; 
+}
+@mixin transition-cubic($number) {
+	-webkit-transition: all $number cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-moz-transition: all $number cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-o-transition: all $number cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-ms-transition: all $number cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	transition: all $number cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+@mixin opacity($number) {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+($number*100)+")";
+	filter: alpha(opacity=($number*100));
+	opacity: $number;
+}
+@mixin calc($property,$value) {
+	#{$property}: -moz-calc(#{$value});
+	#{$property}: -webkit-calc(#{$value});
+	#{$property}: calc(#{$value});
+}
+@mixin border-radius($value) {
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+}
+@mixin rotate($value) {
+	-webkit-transform:rotate($value);
+	-ms-transform:rotate($value);
+	transform:rotate($value);
+}
+@mixin scale($value) {
+	-webkit-transform: scale($value);
+	-moz-transform: scale($value);
+	-o-transform: scale($value);
+	-ms-transform: scale($value);
+	transform: scale($value);
+}
+@mixin display-flex() {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}

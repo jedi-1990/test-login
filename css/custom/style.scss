@@ -1,0 +1,104 @@
+@import "../_scss/includes";
+@import "../_scss/values";
+@import "../_scss/reset";
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background: #FFF;
+    color: $color;
+}
+
+.logout {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+
+    button {
+        width: 200px;
+        height: 40px;
+        @include border-radius(10px);
+        @include transition(.3s);
+        border: none;
+        outline: none;
+        background: $color;
+        font-family: 'bpg';
+        cursor: pointer;
+        color: #FFF;
+
+        &:hover {
+            background: $color_hover;
+        }
+    }
+}
+
+.login {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+
+    .error {
+        padding: 10px 0;
+        text-align: center;
+        color: #F00;
+        display: none;
+    }
+
+    form {
+        width: 300px;
+        height: auto;
+
+        label {
+            width: 100%;
+            padding: 0 10px;
+            text-transform: none;
+        }
+
+        input {
+            width: 100%;
+            height: 50px;
+            margin: 10px 0 20px 0;
+            @include border-radius(10px);
+            border: 1px solid #AAA;
+            @include transition(.3s);
+            outline: none;
+            padding: 0 10px;
+            font-family: 'bpg';
+            color: #555;
+
+            &:focus {
+                border: 1px solid $color;
+            }
+        }
+
+        button {
+            width: 100%;
+            height: 40px;
+            @include border-radius(10px);
+            @include transition(.3s);
+            border: none;
+            outline: none;
+            background: $color;
+            font-family: 'bpg';
+            cursor: pointer;
+            color: #FFF;
+
+            &:hover {
+                background: $color_hover;
+            }
+        }
+    }
+}

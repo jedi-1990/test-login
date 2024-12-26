@@ -1,0 +1,118 @@
+/*****   RESET   *****/
+html, body {
+    height: 100%;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+	color:#4A4A4A;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*****   TYPOGRAPHY   *****/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+h1 {
+	font-size: 80px;
+	position: relative;
+	margin-bottom: 0px;
+}
+h2 {
+	font-size: 44px;
+	position: relative;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 20px;
+}
+h6 {
+	font-size: 18px;
+}
+p {
+	margin-bottom: 10px;
+}
+@font-face {
+  font-family: 'bpg';
+  src: url('../fonts/bpg/BPGMrgvlovani2010.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/bpg/BPGMrgvlovani2010.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/bpg/BPGMrgvlovani2010.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/bpg/BPGMrgvlovani2010.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/bpg/BPGMrgvlovani2010.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'bpgc';
+  src: url('../fonts/bpgc/BPGMrgvlovaniCaps2010.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/bpgc/BPGMrgvlovaniCaps2010.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/bpgc/BPGMrgvlovaniCaps2010.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/bpgc/BPGMrgvlovaniCaps2010.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/bpgc/BPGMrgvlovaniCaps2010.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+/*****   SHORTCODES   *****/
+body {
+	background-color: #FFF;
+	// background:#FFF;
+	font-size:14px;
+	font-family:"bpgc";
+	text-transform: uppercase;
+}
+#main_container {
+	width:100%;
+	height:auto;
+	min-height: -moz-calc(100vh - 160px);
+	min-height: -webkit-calc(100vh - 160px);
+	min-height: calc(100vh - 160px);
+	overflow: hidden;
+}
+button {
+	outline: none !important;
+}
+
+
+/*****   LINKS   *****/
+a {
+	text-decoration:none !important;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	outline: none !important;
+}
+a img {
+	border:none;
+}
+
+
+::selection{ background: $color !important; color:#fff; }
+::-moz-selection{ background: $color !important; color:#fff; }
+
+
